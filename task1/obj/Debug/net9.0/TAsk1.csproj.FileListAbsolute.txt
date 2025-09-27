@@ -1,0 +1,14 @@
+C:\Users\mardin\Desktop\INTERFACE\Task1\bin\Debug\net9.0\TAsk1.exe
+C:\Users\mardin\Desktop\INTERFACE\Task1\bin\Debug\net9.0\TAsk1.deps.json
+C:\Users\mardin\Desktop\INTERFACE\Task1\bin\Debug\net9.0\TAsk1.runtimeconfig.json
+C:\Users\mardin\Desktop\INTERFACE\Task1\bin\Debug\net9.0\TAsk1.dll
+C:\Users\mardin\Desktop\INTERFACE\Task1\bin\Debug\net9.0\TAsk1.pdb
+C:\Users\mardin\Desktop\INTERFACE\Task1\obj\Debug\net9.0\TAsk1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mardin\Desktop\INTERFACE\Task1\obj\Debug\net9.0\TAsk1.AssemblyInfoInputs.cache
+C:\Users\mardin\Desktop\INTERFACE\Task1\obj\Debug\net9.0\TAsk1.AssemblyInfo.cs
+C:\Users\mardin\Desktop\INTERFACE\Task1\obj\Debug\net9.0\TAsk1.csproj.CoreCompileInputs.cache
+C:\Users\mardin\Desktop\INTERFACE\Task1\obj\Debug\net9.0\TAsk1.dll
+C:\Users\mardin\Desktop\INTERFACE\Task1\obj\Debug\net9.0\refint\TAsk1.dll
+C:\Users\mardin\Desktop\INTERFACE\Task1\obj\Debug\net9.0\TAsk1.pdb
+C:\Users\mardin\Desktop\INTERFACE\Task1\obj\Debug\net9.0\TAsk1.genruntimeconfig.cache
+C:\Users\mardin\Desktop\INTERFACE\Task1\obj\Debug\net9.0\ref\TAsk1.dll
