@@ -20,7 +20,7 @@ public class SavingsAccount : BankAccount
         if (amount <= 0)
         {
             a.Status = "Rejected";
-            a.Reason = "Сумма должна быть положительной";
+            a.Reason = "Summa dolzna bit polozitelnoy";
             AddTransaction(a);
             return;
         }
@@ -28,7 +28,7 @@ public class SavingsAccount : BankAccount
         if (amount > Balance)
         {
             a.Status = "Rejected";
-            a.Reason = "Недостаточно средств";
+            a.Reason = "Nedostatochno sredstv";
             AddTransaction(a);
             return;
         }

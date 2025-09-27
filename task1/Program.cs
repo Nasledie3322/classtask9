@@ -6,14 +6,14 @@
     {
         while (true)
         {
-            Console.WriteLine("\nМеню:");
-            Console.WriteLine("1. Создать счёт");
-            Console.WriteLine("2. Просмотреть все счета");
-            Console.WriteLine("3. Пополнить счёт");
-            Console.WriteLine("4. Снять со счёта");
-            Console.WriteLine("5. История транзакций");
-            Console.WriteLine("0. Выход");
-            Console.Write("Введите номер: ");
+            Console.WriteLine("\nMenu:");
+            Console.WriteLine("1. Sozdat schot");
+            Console.WriteLine("2. Prosmotret vse scheta");
+            Console.WriteLine("3. Popolnit schot");
+            Console.WriteLine("4. Snyat so schota");
+            Console.WriteLine("5. Istoriya tranzaksii");
+            Console.WriteLine("0. Vihod");
+            Console.Write("Vedite nomer: ");
 
             string choice = Console.ReadLine();
 
@@ -37,7 +37,7 @@
                 case "0":
                     return;
                 default:
-                    Console.WriteLine("Неверный выбор");
+                    Console.WriteLine("Neverniy vibor");
                     break;
             }
         }
@@ -45,13 +45,13 @@
 
     static void CreateAccount()
     {
-        Console.Write("Введите Id: ");
+        Console.Write("Vedite ID: ");
         string id = Console.ReadLine();
-        Console.Write("Введите имя владельца: ");
+        Console.Write("Vedite imya vladelsa: ");
         string name = Console.ReadLine();
-        Console.Write("Введите валюту: ");
+        Console.Write("Vedite valutu: ");
         string currency = Console.ReadLine();
-        Console.Write("Тип (1 = Savings, 2 = Checking): ");
+        Console.Write("Tip (1 = Savings, 2 = Checking): ");
         string type = Console.ReadLine();
 
         if (type == "1")
@@ -60,19 +60,19 @@
         }
         else
         {
-            Console.Write("Введите овердрафт лимит: ");
+            Console.Write("Vedite overdraft limit: ");
             decimal limit = decimal.Parse(Console.ReadLine());
             accounts.Add(new CheckingAccount(id, name, currency, limit));
         }
 
-        Console.WriteLine("Счёт создан");
+        Console.WriteLine("Schot sozdan");
     }
 
     static void ShowAccounts()
     {
         foreach (var acc in accounts)
         {
-            Console.WriteLine($"{acc.Id}: {acc.HolderName}, {acc.Currency}, Баланс {acc.Balance}");
+            Console.WriteLine($"{acc.Id}: {acc.HolderName}, {acc.Currency}, Balance {acc.Balance}");
         }
     }
 
@@ -87,39 +87,39 @@
 
     static void Deposit()
     {
-        Console.Write("Введите Id счёта: ");
+        Console.Write("Vedite ID schota: ");
         string id = Console.ReadLine();
         IBankAccount acc = FindAccount(id);
         if (acc == null)
         {
-            Console.WriteLine("Счёт не найден");
+            Console.WriteLine("Schet ne nayden");
             return;
         }
-        Console.Write("Введите сумму: ");
+        Console.Write("Vedite summu: ");
         decimal amount = decimal.Parse(Console.ReadLine());
         acc.Deposit(amount);
-        Console.WriteLine("Пополнено");
+        Console.WriteLine("Popolneno");
     }
 
     static void Withdraw()
     {
-        Console.Write("Введите Id счёта: ");
+        Console.Write("Vedite ID schota: ");
         string id = Console.ReadLine();
         IBankAccount acc = FindAccount(id);
         if (acc == null)
         {
-            Console.WriteLine("Счёт не найден");
+            Console.WriteLine("Schet ne nayden");
             return;
         }
         Console.Write("Введите сумму: ");
         decimal amount = decimal.Parse(Console.ReadLine());
         acc.Withdraw(amount);
-        Console.WriteLine("Операция выполнена");
+        Console.WriteLine("Operatsiya vipolnena");
     }
 
     static void ShowTransactions()
     {
-        Console.Write("Введите Id счёта: ");
+        Console.Write("Vedite ID schota: ");
         string id = Console.ReadLine();
         IBankAccount acc = FindAccount(id);
         if (acc == null)

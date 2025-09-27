@@ -25,7 +25,7 @@ public class CheckingAccount : BankAccount
         if (amount <= 0)
         {
             tx.Status = "Rejected";
-            tx.Reason = "Сумма должна быть положительной";
+            tx.Reason = "Summa dolzna bit polozitelnoy";
             AddTransaction(tx);
             return;
         }
@@ -33,7 +33,7 @@ public class CheckingAccount : BankAccount
         if (Balance - amount < -OverdraftLimit)
         {
             tx.Status = "Rejected";
-            tx.Reason = "Превышен лимит овердрафта";
+            tx.Reason = "Previshen limit overdrafta";
             AddTransaction(tx);
             return;
         }

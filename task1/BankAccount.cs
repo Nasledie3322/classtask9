@@ -1,6 +1,6 @@
 public abstract class BankAccount : IBankAccount
 {
-    private List<Transaction> transactions = new List<Transaction>(); // вот здесь создаём список
+    private List<Transaction> transactions = new List<Transaction>(); 
 
     public string Id { get; private set; }
     public string HolderName { get; set; }
@@ -13,7 +13,7 @@ public abstract class BankAccount : IBankAccount
         HolderName = holderName;
         Currency = currency;
         Balance = 0;
-        transactions = new List<Transaction>(); // инициализация ещё раз в конструкторе
+        transactions = new List<Transaction>(); 
     }
 
     public virtual void Deposit(decimal amount)
@@ -33,7 +33,7 @@ public abstract class BankAccount : IBankAccount
         if (amount <= 0)
         {
             tx.Status = "Rejected";
-            tx.Reason = "Сумма должна быть положительной";
+            tx.Reason = "Summa dolzna bit polozitelnoy";
             transactions.Add(tx);
             return;
         }
@@ -52,6 +52,6 @@ public abstract class BankAccount : IBankAccount
 
     protected void AddTransaction(Transaction tx)
     {
-        transactions.Add(tx);  // теперь точно не будет null
+        transactions.Add(tx); 
     }
 }
